@@ -1,0 +1,90 @@
+body {
+    background-color: #f4f4f9; 
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    
+    width: 350px; 
+    max-width: 90%; 
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: aqua;
+}
+
+
+label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+input[type="text"] {
+    margin-bottom: 15px; 
+    padding: 8px 10px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f0f8ff; 
+    border: 1px solid #cceeff; 
+    border-radius: 6px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+   }
+
+  
+body {
+
+    background-color: #f4f4f9; 
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    
+  
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+form {
+    margin: 20px 20px 20px 0; 
+}
+
+#sonucKutusu {
+    width: 350px; 
+    max-width: 90%;
+    margin: 20px 0 20px 20px; 
+    padding: 20px;
+    border: 2px solid teal; 
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
+    background-color: #e0ffff; 
+    height: fit-content; 
+}
+
+#uyari {
+    width: 100%; 
+    text-align: center;
+    order: 3; 
+}
+
+
+@media (min-width: 768px) {
+    body {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    form, #sonucKutusu {
+        margin: 20px; 
+    }
+}
