@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vize–Final/Bütünleme</title>
+    <link rel="stylesheet" href="not.2.css" />
+  </head>
+  <body onload="butunlemeKontrol()">
+    <h2>Not Hesaplama</h2>
+    <p>KBÜ Not Hesaplayıcı (Vize–Final/Bütünleme) – JavaScript ile</p>
+    <form id="notForm" onsubmit="hesapla(); return false;">
+      <label for="vize"> Vize Notu: </label>
+      <input type="text" id="vize" />
+      <label for="yilici"> Yıl İçi Çalışma Puanı (opsiyonel): </label>
+      <input type="text" id="yilici" />
+      <label id="finallabel" for="final"> Final Notu: </label>
+      <input type="text" id="final" onchange="butunlemeKontrol()" />
+      <label for="butunleme"> Bütünleme Notu: </label>
+      <input type="text" id="butunleme" oninput="butunlemeKontrol()" />
+      <br>
+      <button type="submit">Notu Hesapla</button>
+    </form>
+    
+        <p id="uyari"></p> 
+    
+    <div id="sonucKutusu">
+        <h3 style="color: teal;">Hesaplama Sonuçları</h3> 
+        <p id="basariNotu"></p>
+        <p id="toplamNot"></p>
+        <p id="durum"></p>
+        <p id="aciklama"></p>
+    </div>
+
+   <script src="not.3.js"></script>
+  </body>
+</html>
